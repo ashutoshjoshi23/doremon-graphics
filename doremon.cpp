@@ -109,7 +109,20 @@ int main() {
     int gd = DETECT, gm;
     initgraph(&gd, &gm, (char*)"");
 
-    // Play music The music file must be in the .wav format, so if you have an mp3 file, convert it to a .wav file online.
+// Play music The music file must be in the .wav format, so if you have an mp3 file, convert it to a .wav file online.
+ //To execute a music program in C++, follow these steps:
+ //Create a Project:
+    //1. Go to File and select New, then choose Project to create a new project.
+    //2. Initially, the project options will not be enabled. After the project is created, the options will become available.
+    //3. Configure Project Options:
+    //     • Go to Project and select Project Options.
+    //     • Navigate to the Parameters section.
+    //4. Under Linker Options, paste the following code:
+     //    • -lwinmm
+     //5. Click OK to install the music library
+     //6. Ensure Correct Music File Format:
+     //Make sure your music file is in the .wav format. After completing these steps, your environment will be set up to play music in C++
+
     sndPlaySound(TEXT("C:\\Users\\ashuj\\OneDrive\\Desktop\\CG C++\\Tunak-Tunak-Tun-Daler-Mehndi (mp3cut.net).wav"), SND_ASYNC);
 
     int winWidth = getmaxx();
